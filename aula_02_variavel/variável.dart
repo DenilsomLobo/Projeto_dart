@@ -29,6 +29,7 @@ void main() {
   //Saída interpolada
   print('-'*40);
   print('Nome: $nome');
+  print('Funcionária: $funcionaria');
   print('Número do CPF: $cpf');
   print('Nascimento: $nascimento');
   print('Altura: $altura');
