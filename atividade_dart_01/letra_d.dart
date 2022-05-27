@@ -1,5 +1,5 @@
 //Curso tecnico de informatica Senac
-//Atividade Dart 01: Letra C
+//Atividade Dart 01: Letra D
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
@@ -10,19 +10,21 @@
 
 void main() {
   //Declaração:
-  double numero1 = 7;
-  double numero2 = 8;
+  double nota1 = 7;
+  double nota2 = 8;
+  double nota3 = 10;
+  double nota4 = 8;
 
 
     //Função Arrow: 
-  double somar(a, b,) => (a + b);
+  double calcularMedia(a, b, c, d) => ((a + b + c + d) / 4);
 
     //Invocando função:
-  double resultado = somar(numero1, numero2);
+  double resultado = calcularMedia(nota1, nota2, nota3, nota4);
 
   //Saída:
   linha();
-  print('As somas do numero 1= 7 com o numero 2= 8 e igual: ');
+  print('Média das notas são: ');
   print('$resultado');
   linha();
 }

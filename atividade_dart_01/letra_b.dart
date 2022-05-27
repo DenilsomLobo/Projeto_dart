@@ -3,6 +3,8 @@
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
+
+
 void main(){
   //Declaração:
   int numero = 1;
