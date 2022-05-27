@@ -1,28 +1,25 @@
 //Curso tecnico de informatica Senac
-//Atividade Dart 01: Letra G
+//Atividade Dart 01: Letra L
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
-//Função:
 void linha() {
     print('-' * 70);
   }
 
-
 void main() { 
   //Declaração:
-  double ladoA = 8;
-  double ladoB = 6;
+  double altura = 1.85;
 
   //Função Arrow:
-  double calcularQuadrado(a, b) => (a * b);
+  double calcular(a) => ((72.7*a) - 58);
 
   //Invocando a função:
-  double resultado = calcularQuadrado(ladoA, ladoB);
+  double resultado = calcular(altura);
 
-  //Saida:
+  //Saída:
   linha();
-  print('Calculo da area do quadrado: ');
+  print('Calcular peso ideal');
   print('Resultado = $resultado');
   linha();
 

@@ -1,5 +1,5 @@
 //Curso tecnico de informatica Senac
-//Atividade Dart 01: Letra G
+//Atividade Dart 01: Letra H
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
@@ -11,19 +11,19 @@ void linha() {
 
 void main() { 
   //Declaração:
-  double ladoA = 8;
-  double ladoB = 6;
+  double salario = 40;
+  double horas = 120;
 
   //Função Arrow:
-  double calcularQuadrado(a, b) => (a * b);
+  double ganhosDoMes(a, b) => (a * b);
 
   //Invocando a função:
-  double resultado = calcularQuadrado(ladoA, ladoB);
+  double resultado = ganhosDoMes(salario, horas);
 
-  //Saida:
+  //Saída:
   linha();
-  print('Calculo da area do quadrado: ');
+  print('Calculo de ganhos por mês: ');
   print('Resultado = $resultado');
   linha();
 
-}
+ }
