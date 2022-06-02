@@ -1,5 +1,5 @@
 //Curso tecnico de informatica Senac
-//Atividade Dart 01: Letra A
+//Atividade Dart 02: Letra A
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
@@ -10,9 +10,16 @@ void main(){
   stdout.write('Deseja printar na tela ? (s/n) ');
   String? escolha = stdin.readLineSync();
 
-  //Condicionais:
+
   //Saida:
-  if (escolha == 's'){
+  avaliarEscolha( escolha);
+}
+
+//Funções:
+void avaliarEscolha( resultado) {
+  String result = resultado ?? 'n';
+
+  if (result == 's'){
     print('Alô mundo');
   } else {
     print('Fechando o programa ...');
