@@ -6,18 +6,35 @@
 import 'dart:io';
 
 void main(){
+  print('');
   //Entrada:
   stdout.write('Digite um numero: ');
   double numero = double.parse(stdin.readLineSync()!);
+  print('-'*70);
 
-  //Saida:
-  escolhaDeNumero( numero );
+  //É preciso validar a entrada para a função entender que nada foi digitado
+  if (numero == null || numero == '') {
+    //Chamanda da função
+    escolhaDeNumero('Você não digitou nada!');    
+  } else {
+    //Precisa de pelo menos 1 parâmetro posicional
+    escolhaDeNumero('', n: numero);
+  }
 
 }
 
 //Funções:
-void escolhaDeNumero( a ) {
-  double resultado = a ?? 0;
+void escolhaDeNumero(String frase, {n} ) {
+  //Verificação de Nulo
+  dynamic numero = n ?? 0;
 
-  print('O numero informado foi $resultado');
+  //Imprimir os valores
+
+  /*Linha retirada propositalmente por conta do
+  parâmetro opcional obrigatório*/
+  //print('$frase');
+  
+  print('O numero informado foi $numero');
+  print('-' * 70);
+  print('');
 }

@@ -1,5 +1,5 @@
 //Curso tecnico de informatica Senac
-//Atividade Dart 02: Letra A
+//Atividade Dart 03: Letra A
 //Aluno: Denilsom Lobo de Souza
 //Turma: 11
 
@@ -12,14 +12,14 @@ void main(){
 
 
   //Saida:
-  avaliarEscolha( escolha);
+  avaliarEscolha('Print',result:escolha);
 }
 
 //Funções:
-void avaliarEscolha( resultado) {
-  String result = resultado ?? 'n';
+void avaliarEscolha(String tipo, {result}) {
+  String resultado = result ?? 'n';
 
-  if (result == 's'){
+  if (resultado == 's'){
     print('Alô mundo');
   } else {
     print('Fechando o programa ...');
