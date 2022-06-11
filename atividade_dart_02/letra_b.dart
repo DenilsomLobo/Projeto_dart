@@ -7,18 +7,30 @@ import 'dart:io';
 
 void main(){
   //Entrada:
-  stdout.write('Qual nome deseja verificar ?');
-  String? escolha = stdin.readLineSync();
+  stdout.write('Qual nome deseja verificar ? ');
+  String? escolha = stdin.readLineSync()!.toLowerCase();
 
-  var lista1 = [];
-  lista1.add(escolha);
-  var listaReversa = [...lista1].reversed.toList();
+  var teste = inverter(escolha);
 
-  print('nome da palavra = $escolha');
-  print('lista com o nome = $lista1');
-  print('lista com o nome reverso = $listaReversa');
+  resultado(escolha, teste);
 
+}
 
+void resultado(a, b) {
+  if (a == b) {
+    print('');
+    print('É um palindromo!');
+  }
+  else {
+    print('');
+    print('Não é um palindromo');
+  }
+}
 
-
+String inverter(String a) {
+   String inverso ='';
+   for (int i = a.length; i >= 1; i--) {
+     inverso += a.substring(i-1, i);
+   }
+   return inverso;
 }
