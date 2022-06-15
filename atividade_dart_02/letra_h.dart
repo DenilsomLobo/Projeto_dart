@@ -9,20 +9,25 @@ void main() {
   stdout.write('Insira um valor para verificar se ele e primo: ');
   int valor = int.parse(stdin.readLineSync()!);
 
-  if (valor > 2) {
-    funcaoPrimo(valor);
-  } else if (valor == 2) {
-    print('O numero $valor e primo !');
-  } else if (valor <= 1) {
-    print('O numero $valor não e primo !');
-  }
+
+ dynamic resultado = funcaoPrimo(valor);
+
+ print('$resultado');
+
 
 }
 
-void funcaoPrimo(a) {
-  if (a % a == 0){
-    print('O numero $a  não e primo !');
-  } else {
-    print('O numero $a e primo !');
+dynamic funcaoPrimo(numero) {
+  int divisores = 0;
+  for(var c = 1; c <= numero; c++) {
+    if(numero % c == 0) {
+      divisores += 1;
+    }
+  }
+
+  if(divisores ==2) {
+    return 'O numero $numero é primo';
+  }else {
+    return 'O número $numero não é primo';
   }
 }

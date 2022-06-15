@@ -4,11 +4,28 @@
 //Turma: 11
 
 void main() {
+  var primos = imprimirPrimos();
+  print('Os números primos até 100 são: $primos');
+}
 
-  int contador = 100;
-  for (var i = 2; i < contador; i++) {
-    print('Print $i');
+dynamic imprimirPrimos() {
+  List primos = [];
+
+  for(var i = 2; i <= 100; i++) {
+    int quantidadeDivisores = 0;
+    
+    for(var c = 1; c <= i; c++) {
+      if(i % c == 0) {
+        quantidadeDivisores += 1;
+        
+      }
+    }
+    
+    if(quantidadeDivisores == 2) {
+      primos.add(i);
+    }
 
   }
 
+  return primos;
 }

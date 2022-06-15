@@ -4,17 +4,55 @@
 //Turma: 11
 
 void main() {
-  List a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  List a = [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ];
 
   List pares = divisaoPar(a);
 
-  List impart = divisaoImpar(a);
+  List impar = divisaoImpar(a);
+
+  print('Os numeros: $a');
+  print('Os pares são: $pares');
+  print('Os impares são: $impar');
 }
 
-List divisaoPar(i) {
-  return [];
+divisaoPar(List i) {
+  List pares = [];
+  for (var numeros in i) {
+    if (numeros % 2 == 0) {
+      pares.add(numeros);
+    }
+  }
+  return pares;
 }
 
-List divisaoImpar(i) {
-  return [];
+divisaoImpar(List i) {
+  List impares = [];
+  for(var numeros in i ) {
+    if(numeros % 2 != 0) {
+      impares.add(numeros);
+    }
+  }
+  return impares;
 }
