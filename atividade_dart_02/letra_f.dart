@@ -34,4 +34,3 @@ dynamic adivinharNumero(int numero) {
       }
     }
   }
-
