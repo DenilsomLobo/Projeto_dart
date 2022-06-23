@@ -1,0 +1,32 @@
+Exercício a
+Escreva um programa que retorne uma lista que contenha apenas os elementos que são comuns entre eles (sem duplicatas). Certifique-se de que seu programa funcione em duas listas de tamanhos diferentes.
+
+Exercício b
+Escreva um programa que peça ao usuário uma frase. Em seguida verifique se está frase é ou não um palíndromo.
+
+Exercício c
+A partir de uma lista de números inteiros declarada,
+ crie 2 listas novas com os números pares e os números ímpares
+ utilizando 2 funções.
+
+Exercício d
+Recriar o jogo pedra papel ou tesoura
+
+Exercício e
+
+Escreva um programa (usando funções!) que peça ao usuário uma frase contendo várias palavras. Imprima de volta para o usuário a frase na ordem inversa.
+
+Exercício f
+Faça um programa onde você irá énsar em um número entre 0 e 100.Em seguida o programa adivinhará um número, e você, irá dizer se é muito alto (alto), muito baixo (baixo) ou o é o número que você pensou.
+
+exercício g
+Faça uma programa que implementa uma função que recebe como entrada três valores ​​e retorne a maior dos três. Faça isso sem usar a função Dart max()!
+
+Exercício h
+Faça um programa, com entrada do usuário, para determinar se um número digitado é primo ou não.
+
+Erercício i
+Desenvolva um programa, utilizando função, para imprimir os números primos entre 0 e 100
+
+Exercício j
+Faça um programa utilizando 1 função apenas para processar 3 valores digitados pelo usuário. Em seguida, a função terá que retornar o dobro dos 3 valores. No programa principal a cada valor que foi retornado, será somado + 10. Imprima os valores separadamente.
